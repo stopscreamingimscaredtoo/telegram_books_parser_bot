@@ -1,4 +1,4 @@
-RU:
+# Русский
 
 # Telegram Bot (Books Parser)
 
@@ -37,7 +37,7 @@ RU:
 /top
 /update
 
-EN:
+# English
 # Telegram Bot (Books Parser)
 
 ## 📌 Description
