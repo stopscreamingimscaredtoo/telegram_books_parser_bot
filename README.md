@@ -1,100 +1,127 @@
-# Русский
+# 📚 Telegram Books Parser Bot
 
-# Telegram Bot (Books Parser)
+## English
 
-## 📌 Описание
+### 📌 Description
 
-Бот парсит сайт с книгами и показывает пользователю топ книг по цене.
+This Telegram bot parses book data from the website https://books.toscrape.com and allows users to view top-rated books directly in Telegram.
 
-## ⚙️ Функции
+The bot collects data, filters books by rating, sorts them by price, and displays results using interactive buttons.
 
-* Парсинг сайта books.toscrape.com
-* Фильтрация по рейтингу (4 и 5)
-* Сортировка по цене
-* Кнопки для выбора количества книг (3, 5, 10)
-* Красивый вывод в Telegram
+### ⚙️ Features
 
-## 🛠 Технологии
-
-* Python
-* aiogram
-* requests
-* BeautifulSoup
-
-## 🚀 Как запустить
-
-1. Установить зависимости:
-   pip install aiogram requests beautifulsoup4
-
-2. Вставить свой TOKEN
-
-3. Запустить:
-   python bot.py
-
-## 💡 Команды
-
-/start
-/top
-/update
-
-# English
-# Telegram Bot (Books Parser)
-
-## 📌 Description
-
-This Telegram bot parses data from the website https://books.toscrape.com and shows users a list of top-rated books sorted by price.
-
-## ⚙️ Features
-
-* Parses multiple pages of the website
-* Filters books with rating **4 and 5**
-* Sorts books by price
+* Web scraping from multiple pages
+* Filtering books with rating **4 and 5**
+* Sorting books by price
 * Interactive buttons to choose number of books (3, 5, 10)
-* Clean and formatted output in Telegram
-* Data caching via local file (fast response)
+* Fast responses using cached data (`books.csv`)
+* Manual data update via command
 
-## 🛠 Technologies
+### 🛠 Technologies
 
 * Python
 * aiogram
 * requests
 * BeautifulSoup
 
-## 🚀 How to Run
+### 🚀 How to Run
 
 1. Install dependencies:
    pip install aiogram requests beautifulsoup4
 
-2. Insert your Telegram bot token in the code:
+2. Insert your Telegram bot token:
    TOKEN = "your_token_here"
 
 3. Run the bot:
    python bot.py
 
-## 💡 Commands
+### 💡 Commands
 
 /start – start the bot
-/top – choose how many books to display
-/update – update book data from the website
+/top – choose number of books
+/update – update data from the website
 
-## 📸 Example Output
+### 📸 Example
 
-The bot displays:
+1. Choose number of books:
+   "Top 3", "Top 5", "Top 10"
 
-* Book title
-* Price
-* Rating
+2. Output:
 
-Example:
+```id="m2b7ok"
 📚 Book Name
 💰 £10.00
 ⭐ Four
+```
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 * bot.py — main bot logic
-* books.csv — cached data (generated automatically)
+* books.csv — cached parsed data
+
+---
+
+## Русский
+
+### 📌 Описание
+
+Этот Telegram-бот парсит данные о книгах с сайта https://books.toscrape.com и позволяет пользователю получать список лучших книг прямо в Telegram.
+
+Бот собирает данные, фильтрует книги по рейтингу, сортирует по цене и выводит результат с помощью кнопок.
+
+### ⚙️ Функции
+
+* Парсинг сайта (несколько страниц)
+* Фильтрация книг с рейтингом **4 и 5**
+* Сортировка по цене
+* Кнопки выбора количества книг (3, 5, 10)
+* Быстрый ответ за счёт кэша (`books.csv`)
+* Обновление данных через команду
+
+### 🛠 Технологии
+
+* Python
+* aiogram
+* requests
+* BeautifulSoup
+
+### 🚀 Как запустить
+
+1. Установить зависимости:
+   pip install aiogram requests beautifulsoup4
+
+2. Вставить токен бота:
+   TOKEN = "your_token_here"
+
+3. Запустить:
+   python bot.py
+
+### 💡 Команды
+
+/start – запуск бота
+/top – выбор количества книг
+/update – обновление данных
+
+### 📸 Пример
+
+1. Выбор:
+   "Топ 3", "Топ 5", "Топ 10"
+
+2. Вывод:
+
+```id="k5k2km"
+📚 Название книги
+💰 £10.00
+⭐ Four
+```
+
+### 📁 Структура проекта
+
+* bot.py — логика бота
+* books.csv — сохранённые данные
+
+---
 
 ## 👨‍💻 Author
 
-Telegram bot developed as a learning project for web scraping and bot development.
+This project was created as a learning project to practice web scraping and Telegram bot development.
